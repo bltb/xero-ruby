@@ -22,13 +22,13 @@ We have two sample apps showing SDK usage:
 * Create a [free Xero user account](https://www.xero.com/us/signup/api/)
 * Login to your Xero developer [/myapps](https://developer.xero.com/myapps) dashboard & create an API application
 * Copy the credentials from your API app and store/access them using a secure ENV variable strategy
-* Research and include the [necessary scopes](https://developer.xero.com/documentation/oauth2/scopes) for your app's functionality as a space-seperated list, ex. "`SCOPES="openid profile email accounting.transactions accounting.settings"`"
+* Research and include the [necessary scopes](https://developer.xero.com/documentation/oauth2/scopes) for your app's functionality as a space-separated list, ex. "`SCOPES="openid profile email accounting.transactions accounting.settings"`"
 ## Installation
 To install this gem to your project:
 ```
 gem install 'xero-ruby'
 ```
-Or more commonly in Ruby on Rails usage add to your gemfile and run `bundle install`:
+Or more commonly in Ruby on Rails usage add to your Gemfile and run `bundle install`:
 ```
 gem 'xero-ruby'
 ```
@@ -107,7 +107,7 @@ A `token_set` is what we call the XeroAPI response that contains data about your
 
 Note that an `access_token` is valid for 30 minutes but a `refresh_token` can be used once in up to a 60 day window. If a refresh_token is used to refresh access you must replace the entire token_set.
 
-Both the `id_token` & `access_token` are JWT's, and can be decoded to see additional metadata described in the Token Helpers section:
+Both the `id_token` & `access_token` are JWTs, and can be decoded to see additional metadata described in the Token Helpers section:
 ## Making API calls with a valid token_set
 After the initial user interaction you can simply setup a xero_client by passing the whole token_set to the client.
 ```ruby
@@ -310,7 +310,7 @@ All monetary and fields and a couple quantity fields utilize BigDecimal
 ```
 
 ## Querying & Filtering
-Examples for the `opts` (_options_) parameters most endpoints support. This is an area of focus and improvement. If you have a complex filering/sorting/where usage that is not supported please [open an issue](https://github.com/XeroAPI/xero-ruby/issues).
+Examples for the `opts` (_options_) parameters most endpoints support. This is an area of focus and improvement. If you have a complex filtering/sorting/where usage that is not supported please [open an issue](https://github.com/XeroAPI/xero-ruby/issues).
 ```ruby
 # Invoices
  opts = {
@@ -406,10 +406,10 @@ This SDK is one of a number of SDKs that the Xero Developer team builds and main
 
 Here are a few things you should be aware of as a contributor:
 * Xero has adopted the Contributor Covenant [Code of Conduct](https://github.com/XeroAPI/xero-ruby/blob/master/CODE_OF_CONDUCT.md), we expect all contributors in our community to adhere to it
-* If you raise an issue then please make sure to fill out the github issue template, doing so helps us help you 
+* If you raise an issue then please make sure to fill out the GitHub issue template, doing so helps us help you 
 * You’re welcome to raise PRs. As our SDKs are generated we may use your code in the core SDK build instead of merging your code
 * We have a [contribution guide](https://github.com/XeroAPI/xero-ruby/blob/master/CONTRIBUTING.md) for you to follow when contributing to this SDK
-* Curious about how we generate our SDK’s? Have a [read of our process](https://devblog.xero.com/building-sdks-for-the-future-b79ff726dfd6) and have a look at our [OpenAPISpec](https://github.com/XeroAPI/Xero-OpenAPI)
+* Curious about how we generate our SDKs? Have a [read of our process](https://devblog.xero.com/building-sdks-for-the-future-b79ff726dfd6) and have a look at our [OpenAPISpec](https://github.com/XeroAPI/Xero-OpenAPI)
 * This software is published under the [MIT License](https://github.com/XeroAPI/xero-ruby/blob/master/LICENSE)
 
 For questions that aren’t related to SDKs please refer to our [developer support page](https://developer.xero.com/support/).
