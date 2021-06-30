@@ -22,7 +22,7 @@ We have two sample apps showing SDK usage:
 * Create a [free Xero user account](https://www.xero.com/us/signup/api/)
 * Login to your Xero developer [/myapps](https://developer.xero.com/myapps) dashboard & create an API application
 * Copy the credentials from your API app and store/access them using a secure ENV variable strategy
-* Resaearch and include the [neccesary scopes](https://developer.xero.com/documentation/oauth2/scopes) for your app's functionality as a space-seperated list, ex. "`SCOPES="openid profile email accounting.transactions accounting.settings"`"
+* Research and include the [necessary scopes](https://developer.xero.com/documentation/oauth2/scopes) for your app's functionality as a space-seperated list, ex. "`SCOPES="openid profile email accounting.transactions accounting.settings"`"
 ## Installation
 To install this gem to your project:
 ```
@@ -402,7 +402,7 @@ bundle install
 * `rspec spec/`
 
 ## Participating in Xero’s developer community
-This SDK is one of a number of SDK’s that the Xero Developer team builds and maintains. We are grateful for all the contributions that the community makes. 
+This SDK is one of a number of SDKs that the Xero Developer team builds and maintains. We are grateful for all the contributions that the community makes.
 
 Here are a few things you should be aware of as a contributor:
 * Xero has adopted the Contributor Covenant [Code of Conduct](https://github.com/XeroAPI/xero-ruby/blob/master/CODE_OF_CONDUCT.md), we expect all contributors in our community to adhere to it
